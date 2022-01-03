@@ -62,6 +62,7 @@ public class MainActivity extends PBase {
 
     private String parVer = "2.7.3 / 03-Ene-2022 ";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
