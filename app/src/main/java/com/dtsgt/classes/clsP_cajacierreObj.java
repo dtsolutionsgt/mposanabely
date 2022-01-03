@@ -147,7 +147,7 @@ public class clsP_cajacierreObj {
             item.ruta=dt.getString(1);
             item.corel=dt.getInt(2);
             item.estado=dt.getInt(3);
-            item.fecha=dt.getInt(4);
+            item.fecha=dt.getLong(4);
             item.vendedor=dt.getString(5);
             item.codpago=dt.getInt(6);
             item.fondocaja=dt.getDouble(7);

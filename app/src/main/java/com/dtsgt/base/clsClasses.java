@@ -34,7 +34,7 @@ public class clsClasses {
         public String ruta;
         public int  corel;
         public int  estado;
-        public int  fecha;
+        public long fecha;
         public String vendedor;
 		public int codpago;
 		public double fondocaja;

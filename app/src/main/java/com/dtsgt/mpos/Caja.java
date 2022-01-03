@@ -223,23 +223,20 @@ public class Caja extends PBase {
 
     public void saveMontoIni(){
         Cursor dt;
-        int fecha=0;
+        long fecha=0;
 
-        try{
-
+        try {
             clsP_cajacierreObj caja = new clsP_cajacierreObj(this,Con,db);
-
 
             if(gl.cajaid==1) {
                 caja.fill();
-
                 if (caja.count != 0) {
                     gl.corelZ = caja.last().corel + 1;
                 } else {
                     gl.corelZ = 1;
                 }
 
-            }else if(gl.cajaid==3){
+            } else if(gl.cajaid==3){
                 caja.fill(" WHERE ESTADO = 0");
                 gl.corelZ = caja.last().corel;
                 fecha = caja.last().fecha;
@@ -254,7 +251,7 @@ public class Caja extends PBase {
             itemC.statcom = "N";
 
             if(gl.cajaid==1){
-                itemC.fecha = (int) du.getFechaActual();
+                itemC.fecha = (long) du.getFechaActual();
 
                 itemC.estado = 0;
                 itemC.codpago = 0;

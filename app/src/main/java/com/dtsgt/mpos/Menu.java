@@ -1822,7 +1822,9 @@ public class Menu extends PBase {
 
 				if(caja.last().estado==1){
 					return false;
-				}else if(gl.cajaid==5) {
+				} else if(gl.cajaid==5) {
+				    long cf=caja.last().fecha;
+				    long af=du.getFechaActual();
 					if(caja.last().fecha!=du.getFechaActual()){
 						gl.validDate=true;
 						gl.lastDate=caja.last().fecha;
